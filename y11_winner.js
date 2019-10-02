@@ -36,13 +36,14 @@ function setup(){
     tSize = height/10;
     
     // For making buttons.
-    let y8Bu = new Button(tSize * 9 + 4,tSize*1.7,88,42);
-    y8Bu.text = "home";
+    // Home button top right.
+    let y8Bu = new Button(width-tSize - 9,tSize,88,42);
+    y8Bu.text = "    home";
     y8Bu.hLink = true;
     y8Bu.link = "index.html";
     y8Bu.fill.x = 0;
-    y8Bu.fill.y = 0;
-    y8Bu.fill.z = 90 + 1 * 22;
+    y8Bu.fill.y = 255;
+    y8Bu.fill.z = 202;
     y8Bu.stroke.x = 255;
     y8Bu.stroke.y = 255;
     y8Bu.stroke.z = 255;
@@ -52,7 +53,7 @@ function setup(){
 }
 
 function draw(){
-    background(0,142,172);
+    background(0,0,0);
     
     // Poetry Day title.
     renderTitle();
@@ -124,18 +125,25 @@ function mousePressed(){
 }
 
 function renderTitle(){
-    fill(255);
+    fill(0,255,202);
     stroke(0);
-    textSize(tSize);
+    textSize(tSize*0.9);
     //textStyle(NORMAL);
     strokeWeight(8);
-    text("YOUR poem could be posted here :)", tSize*1.7,tSize);
+    text("Year 11 WINNER!", tSize,tSize);
+    
+    fill(255);
+    stroke(0);
+    textSize(tSize*0.5);
+    //textStyle(NORMAL);
+    strokeWeight(8);
+    text("YOUR poem could be\nposted here :)", tSize,tSize*4);
     
     
     // Quotation.
     fill(   0,
-            0,
-            Math.sin(frameCount/30)*255);
+            Math.sin(frameCount/30)*255,
+            0);
     noStroke();
 //    stroke(255-Math.sin(frameCount/40)*255,
 //            255-Math.sin(frameCount/40)*255,
@@ -143,7 +151,7 @@ function renderTitle(){
     textSize(tSize/2);
     strokeWeight(1);
     textStyle(ITALIC);
-    text("Go write it, you.", tSize*1.7,tSize*2);
+    text("Go write it, you.", tSize,tSize*7);
     textSize(tSize/3);
     //text("(Emily Dickinson)", tSize*1.7,tSize*3+tSize);
     textStyle(NORMAL);
