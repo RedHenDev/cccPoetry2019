@@ -26,7 +26,7 @@ function preload(){
     
     // https://nationalpoetryday.co.uk/
     // Should hyperlink to that site!
-    banner = loadImage('https://cccpoetry.github.io/Poetry2018/poetryDay_banner.png');
+    banner = loadImage('https://cccpoetry.github.io/cccPoetry2019/NPD_banner_2019.png');
 }
 
 let testBu;
@@ -80,7 +80,7 @@ function setup(){
 }
 
 function draw(){
-    background(0,142,172);
+    background(0,0,222);
   
     // Poetry Day banner.
     image(banner, tSize*1.7+(width/1.7)/2,height-height/6-12,width/1.7,height/3);
@@ -151,7 +151,7 @@ function renderTitle(){
     textSize(tSize);
     //textStyle(NORMAL);
     strokeWeight(8);
-    text("National Poetry Day\ncompetition 2018", tSize*1.7,tSize);
+    text("National Poetry Day\ncompetition 2019", tSize*1.7,tSize);
     
     
     // Quotation.
@@ -165,7 +165,7 @@ function renderTitle(){
     textSize(tSize/2);
     strokeWeight(1);
     textStyle(ITALIC);
-    text("'The poetry of CHANGE...'", tSize*1.7,tSize*3);
+    text("'The poetry of TRUTH...'", tSize*1.7,tSize*3);
     textSize(tSize/3);
     //text("(Emily Dickinson)", tSize*1.7,tSize*3+tSize);
     textStyle(NORMAL);
