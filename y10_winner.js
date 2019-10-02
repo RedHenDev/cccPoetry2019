@@ -1,7 +1,4 @@
 
-// Sound effect.
-let plip;
-
 let poem;
 
 // Array of buttons.
@@ -18,10 +15,6 @@ let prevX = 0;
 let prevY = 0;
 
 function preload(){
-    //plip = loadSound('plip.wav');
-    plip =   loadSound('https://cccpoetry.github.io/Poetry2018/plip.wav');
-    // Plip.wav orig. 'Flipping Through Book.wav' by spookymodem.
-    // See https://opengameart.org/content/book-pages
     
     //poem = loadImage('y9_p.jpg');
     
@@ -31,10 +24,6 @@ function preload(){
 function setup(){
     createCanvas(   windowWidth,
                     windowHeight);
-  
-    
-    plip.setVolume(0.2);
-    plip.play();
     
     // For buttonClass.
     rectMode(CENTER);
@@ -128,7 +117,7 @@ function renderTitle(){
     textSize(tSize);
     //textStyle(NORMAL);
     strokeWeight(8);
-    text("Wow! No Year 10 entries!?", tSize*1.7,tSize);
+    text("Hello!  YOUR poem could be here :)", tSize*1.7,tSize);
     
     
     // Quotation.
@@ -136,15 +125,13 @@ function renderTitle(){
             0,
             Math.sin(frameCount/30)*255);
     noStroke();
-//    stroke(255-Math.sin(frameCount/40)*255,
-//            255-Math.sin(frameCount/40)*255,
-//            255-Math.sin(frameCount/40)*255);
+
     textSize(tSize/2);
     strokeWeight(1);
     textStyle(ITALIC);
-    text("Will YOU win next year?", tSize*1.7,tSize*2);
+    //text("Will YOU win next year?", tSize*1.7,tSize*2);
     textSize(tSize/3);
-    //text("(Emily Dickinson)", tSize*1.7,tSize*3+tSize);
+   
     textStyle(NORMAL);
 }
 

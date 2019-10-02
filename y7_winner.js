@@ -1,4 +1,3 @@
-
 let poem;
 
 // Array of buttons.

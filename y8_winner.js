@@ -1,7 +1,3 @@
-
-// Sound effect.
-let plip;
-
 let poem;
 
 // Array of buttons.
@@ -18,10 +14,6 @@ let prevX = 0;
 let prevY = 0;
 
 function preload(){
-    //plip = loadSound('plip.wav');
-    plip =   loadSound('https://cccpoetry.github.io/Poetry2018/plip.wav');
-    // Plip.wav orig. 'Flipping Through Book.wav' by spookymodem.
-    // See https://opengameart.org/content/book-pages
     
     poem = loadImage('y8_p.jpg');
     
@@ -31,10 +23,6 @@ function preload(){
 function setup(){
     createCanvas(   windowWidth,
                     windowHeight);
-  
-    
-    plip.setVolume(0.2);
-    plip.play();
     
     // For buttonClass.
     rectMode(CENTER);
