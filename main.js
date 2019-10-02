@@ -19,10 +19,6 @@ let prevX = 0;
 let prevY = 0;
 
 function preload(){
-    //plip = loadSound('plip.wav');
-    plip =   loadSound('https://cccpoetry.github.io/Poetry2018/plip.wav');
-    // Plip.wav orig. 'Flipping Through Book.wav' by spookymodem.
-    // See https://opengameart.org/content/book-pages
     
     // https://nationalpoetryday.co.uk/
     // Should hyperlink to that site!
@@ -35,10 +31,6 @@ let testBu;
 function setup(){
     createCanvas(   windowWidth,
                     windowHeight);
-  
-    
-    plip.setVolume(0.2);
-    plip.play();
     
     // For buttonClass.
     rectMode(CENTER);
@@ -80,7 +72,7 @@ function setup(){
 }
 
 function draw(){
-    background(0,0,222);
+    background(0,244,0);
   
     // Poetry Day banner.
     image(banner, tSize*1.7+(width/1.7)/2,height-height/6-12,width/1.7,height/3);
@@ -88,7 +80,7 @@ function draw(){
     // Poetry Day title.
     renderTitle();
     
-    doSparkles();
+    //doSparkles();
     
     for (let i = 0; i < bus.length; i++){
     bus[i].hoverCheck(mouseX,mouseY);
@@ -147,7 +139,7 @@ function mousePressed(){
 
 function renderTitle(){
     fill(255);
-    stroke(0);
+    stroke(0,0,255);
     textSize(tSize);
     //textStyle(NORMAL);
     strokeWeight(8);
@@ -165,9 +157,8 @@ function renderTitle(){
     textSize(tSize/2);
     strokeWeight(1);
     textStyle(ITALIC);
-    text("'The poetry of TRUTH...'", tSize*1.7,tSize*3);
+    text("'The poetry of TRUTH...'", tSize*1.7,tSize*3.3);
     textSize(tSize/3);
-    //text("(Emily Dickinson)", tSize*1.7,tSize*3+tSize);
     textStyle(NORMAL);
 }
 
