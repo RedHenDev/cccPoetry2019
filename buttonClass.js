@@ -89,8 +89,6 @@ class Button{
     }
     
     activate(){
-        // For testing.
-        plip.play();
         if (this.hLink)
             window.location.href =
                 this.link;

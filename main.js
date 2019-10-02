@@ -25,9 +25,6 @@ function preload(){
     banner = loadImage('https://cccpoetry.github.io/cccPoetry2019/NPD_banner_2019.png');
 }
 
-let testBu;
-
-
 function setup(){
     createCanvas(   windowWidth,
                     windowHeight);
@@ -72,7 +69,7 @@ function setup(){
 }
 
 function draw(){
-    background(0,244,0);
+    background(0,222,101);
   
     // Poetry Day banner.
     image(banner, tSize*1.7+(width/1.7)/2,height-height/6-12,width/1.7,height/3);
