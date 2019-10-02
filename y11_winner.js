@@ -1,4 +1,7 @@
-let poem;
+// Empty string, so that if no
+// poem yet loaded, we shall not
+// attempt to display it.
+let poem = "";
 
 // Array of buttons.
 let bus = [];
@@ -15,7 +18,9 @@ let prevY = 0;
 
 function preload(){
  
-    poem = loadImage('y11_p.jpg');
+    // This is where we can preload our
+    // poem's image.
+   // poem = loadImage('y11_p.jpg');
     
 }
 
@@ -52,10 +57,13 @@ function draw(){
     // Poetry Day title.
     renderTitle();
     
-    // Render Poem.
+    // Render Poem, that is,
+    // if one has been loaded.
+    if (poem != "")
     image(poem, tSize*1.7, tSize *2.5, width-width/1.5,height-tSize*3);
     
     doSparkles();
+    //doSlpodgefall();
     
     for (let i = 0; i < bus.length; i++){
     bus[i].hoverCheck(mouseX,mouseY);
@@ -92,6 +100,10 @@ function doSparkles(){
             sparkles.splice(i,1);
     }
     
+    
+}
+
+function doSlpodgefall(){
     // Blue splodge splodgefall.
     if (frameCount % 44){
         sparkles.push(new Sparkle(Math.random()*tSize*1.4,
@@ -117,7 +129,7 @@ function renderTitle(){
     textSize(tSize);
     //textStyle(NORMAL);
     strokeWeight(8);
-    text("Year 11 Winner!", tSize*1.7,tSize);
+    text("YOUR poem could be posted here :)", tSize*1.7,tSize);
     
     
     // Quotation.
@@ -131,7 +143,7 @@ function renderTitle(){
     textSize(tSize/2);
     strokeWeight(1);
     textStyle(ITALIC);
-    text("Thomas Neil", tSize*1.7,tSize*2);
+    text("Go write it, you.", tSize*1.7,tSize*2);
     textSize(tSize/3);
     //text("(Emily Dickinson)", tSize*1.7,tSize*3+tSize);
     textStyle(NORMAL);
