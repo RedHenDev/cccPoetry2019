@@ -1,7 +1,4 @@
 
-// Sound effect.
-let plip;
-
 // Banner image.
 let banner;
 
@@ -154,7 +151,7 @@ function renderTitle(){
     textSize(tSize/2);
     strokeWeight(1);
     textStyle(ITALIC);
-    text("'The poetry of TRUTH...'", tSize*1.7,tSize*3.3);
+    text("'This year's theme is TRUTH...'", tSize*1.7,tSize*3.3);
     textSize(tSize/3);
     textStyle(NORMAL);
 }
