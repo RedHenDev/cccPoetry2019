@@ -34,31 +34,45 @@ a{
     float: left;
 }
         #chicken{
-            animation: animate 1s linear infinite;
-            float: right;
+            width: 800;
+            height: auto;
         }
-        
-        @keyframes animate{
-            0%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
+         #chest{
+            width: 800;
+            height: auto;
+        }
+    
             
-        }
+        
 
 #menu .selected{
     text-decoration: none;
     color: lavenderblush;
     font-weight: bold;
 }
+        
+        h3{
+            text-indent: 32px;
+        }
 
 #poem{
     background-color: rgb(0,69,101);
     color: whitesmoke;
+    width: 600;
+    height: auto;
+    font-size: 14;
+    float: right;
+    font-family: Arial, fantasy;
 }
+        
+footer{
+        color: grey;
+        text-align: right;
+    }
+        
+        
     </style>
+    
     
     
 </head>
@@ -76,17 +90,22 @@ a{
             </div>
 
 <div id="poem">
-    <h3>'Truth' - Some Student</h3>
+    <h3>'The Lie' - by Isabel Turner</h3>
     <pre>
-    The hawk's tears
-    ran the page
+    That lie I told some months ago,
+    Keeps biting back, it won't let go.
+    And now I wish with all my might,
+    I'd told the truth, I'd said what's right.
     
-    As did mine.
+    To tell the truth is really hard,
+    But lies can be behind doors that are barred;
+    The chest of truth can be opened with the key,
+    And the truth can be spoken freely.
     </pre>
 </div>
 
 <div id="chicken">
-    <img src="RedHenIconAlpha512512.png">;
+    <img id="chest" src="https://images.pexels.com/photos/366791/pexels-photo-366791.jpeg">
 </div>
 
 <footer>&copy; Mr New 2019</footer>
