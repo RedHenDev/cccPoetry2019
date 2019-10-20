@@ -1,0 +1,37 @@
+footer{
+    clear: both;
+    background-color: darkslategrey;
+    color: antiquewhite;
+    font-family: Arial, fantasy;
+}
+
+body{
+    font-family: Arial, fantasy;
+}
+
+a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 4px;
+}
+
+#menu{
+    background-color: cadetblue;
+    width: 200px;
+    float: left;
+}
+
+#menu .selected{
+    text-decoration: none;
+    color: lavenderblush;
+    font-weight: bold;
+}
+
+#poem{
+    background-color: rgb(0,69,101);
+    color: whitesmoke;
+}

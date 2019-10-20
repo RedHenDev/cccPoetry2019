@@ -26,7 +26,7 @@ h3, h2{
 
 #menu{
     background-color: cadetblue;
-    width: 128px;
+    width: 200px;
     float: left;
 }
 
@@ -37,13 +37,13 @@ h3, h2{
 }
 
 #cont{
-    width: 800px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #NPD_banner{
-    width: 672px;
+    width: 400px;
     height: auto;
 }
 
@@ -51,7 +51,7 @@ h3, h2{
 
 #text{
     background-color: whitesmoke;
-    width: 672px;
+    width: auto;
     color: blue;
     font-weight: bolder;
     float: right;
