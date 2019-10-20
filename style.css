@@ -1,0 +1,66 @@
+#header{
+    background-color: rgb(0,100,202);
+    color: whitesmoke;
+    text-align: center;
+    padding: 9px;
+}
+
+body{
+    background-color: rgb(0,50,152);
+    font-family: Arial, Verdanda, fantasy, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+h3, h2{
+    margin: 0;
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 4px;
+}
+
+#menu{
+    background-color: cadetblue;
+    width: 128px;
+    float: left;
+}
+
+#menu .selected{
+    text-decoration: none;
+    color: lavenderblush;
+    font-weight: bold;
+}
+
+#cont{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#NPD_banner{
+    width: 672px;
+    height: auto;
+}
+
+
+
+#text{
+    background-color: whitesmoke;
+    width: 672px;
+    color: blue;
+    font-weight: bolder;
+    float: right;
+    text-align: center;
+}
+
+#footer{
+    background-color: dimgrey;
+    text-align: right;
+    clear: both;
+    padding: 9px;
+}
